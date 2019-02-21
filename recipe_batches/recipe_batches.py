@@ -3,6 +3,8 @@
 import math
 
 def recipe_batches(recipe, ingredients):
+  ingredients = dict(sorted(ingredients.items()))
+  recipe = dict(sorted(recipe.items()))
   recipe_quantity = list(recipe.values())
   ingredients_quantity = list(ingredients.values())
   if len(recipe_quantity) > len(ingredients_quantity): return 0
@@ -24,7 +26,7 @@ def recipe_batches(recipe, ingredients):
 
 
 print(recipe_batches({'milk': 100, 'flour': 4, 'sugar': 10, 'butter': 5}, {'milk': 1288, 'flour': 9, 'sugar': 95}))
-print(recipe_batches({'milk': 100, 'butter': 50, 'cheese': 10}, {'milk': 198, 'butter': 52, 'cheese': 10}))
+print(recipe_batches({'butter': 50, 'milk': 100, 'cheese': 10}, {'milk': 198, 'butter': 52, 'cheese': 10}))
 print(recipe_batches({'milk': 2, 'sugar': 40, 'butter': 20}, {'milk': 5, 'sugar': 120, 'butter': 500}))
 print(recipe_batches({'milk': 2}, {'milk': 200}))
 

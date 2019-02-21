@@ -9,7 +9,6 @@ def find_max_profit (stock_prices):
         diff = stock_prices[j] - stock_prices[i]
         if diff > max:
           max = diff
-
   return max
 
 
