@@ -8,8 +8,7 @@ def climbing_stairs(n, cache=None):
   elif (n == 2):
     return 2
   else:
-    cache = climbing_stairs(n - 3, cache) + climbing_stairs(n - 2, cache) + climbing_stairs(n - 1, cache)
-    return cache
+    return climbing_stairs(n - 3, cache) + climbing_stairs(n - 2, cache) + climbing_stairs(n - 1, cache)
 
 print(climbing_stairs(0))
 print(climbing_stairs(1))
