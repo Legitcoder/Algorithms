@@ -8,7 +8,7 @@ import argparse
 #   minimum = min(prices)
 #
 #   remaining_max = 0
-# 
+#
 #   while prices.index(maximum) < prices.index(minimum):
 #     prices.remove(maximum)
 #     maximum = max(prices)
