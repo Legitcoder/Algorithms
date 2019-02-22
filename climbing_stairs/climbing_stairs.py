@@ -5,8 +5,7 @@ import sys
 def climbing_stairs(n, cache=None):
   if cache is None: cache = [0] * (n + 1)
 
-  if cache[n] > 0:
-    return cache[n]
+  if cache[n] > 0: return cache[n]
 
   if (n == 1 or n == 0):
     cache[n] = 1
